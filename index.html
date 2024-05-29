@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Sitio Web de Seguridad</title>
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #555;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #4e6bff;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+            flex-grow: 1; /* Ocupa todo el espacio restante */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex; /* Cambio a flexbox */
+            justify-content: center; /* Centrar horizontalmente */
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #4e6bff;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #3557d1;
+        }
+
+        /* Estilos del menú desplegable */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4e6bff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        .dropdown-content a:hover {
+            background-color: #3557d1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        main img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            color: #4e6bff;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #4e6bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Sitio Web de Seguridad</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropbtn">Conoce más </a>
+                    <div class="dropdown-content">
+                        <a href="consejos.html">Consejos Generales de Seguridad</a>
+                        <a href="contraseñas.html">Protección de Contraseñas</a>
+                        <a href="redes_sociales.html">Seguridad en Redes Sociales</a>
+                        <a href="malware.html">Protección contra Malware</a>
+                        <a href="recursos.html">Recursos y Enlaces Útiles</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Este sitio web proporciona información y consejos sobre cómo mantenerse seguro en línea. Explora nuestras páginas para aprender más.</p>
+        <img src="img/seguridad-informatica.jpg" alt="Seguridad Informática">
+
+        <h2>Consejos de Seguridad:</h2>
+        <p>Aquí encontrarás una amplia gama de consejos y trucos para mantener tu información segura en línea. Desde proteger tus contraseñas hasta evitar el malware, tenemos todo lo que necesitas para estar protegido.</p>
+
+        <h2>Recursos Útiles:</h2>
+        <p>Descubre enlaces útiles y recursos adicionales para ampliar tu conocimiento sobre seguridad en línea. Desde artículos informativos hasta herramientas de seguridad, estamos aquí para ayudarte a mantenerte seguro.</p>
+    </main>
+    <footer>
+        <p>Sitio Web de Seguridad - Ingeniería Informática - 402</p>
+    </footer>
+</body>
+</html>
+
+
+
